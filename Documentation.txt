@@ -1,0 +1,28 @@
+
+
+Introduction:
+The Star Cinema project is a simple implementation of a cinema ticket booking system using object-oriented programming principles. It consists of two classes, namely Star_Cinema and Hall.
+
+Star_Cinema Class:
+This is the parent class of Hall and has two attributes hall_list and show_list, which are currently commented out. This class can be used to store information about all the halls and shows in the cinema.
+
+Hall Class:
+This class represents a single cinema hall and has four attributes rows, cols, hall_no, and show_list. It has several methods, including entry_show, book_seat, view_show_list, and view_available_seat.
+
+entry_show() Method:
+This method is used to add a new movie show to the hall. It takes three arguments id, movie_name, and time and creates a new show list, which is then appended to the show_list attribute of the Hall instance. It also creates a new 2D list of available seats for the show and stores it in the seat attribute of the Hall instance.
+
+book_seat() Method:
+This method is used to book a seat for a particular movie show. It takes five arguments, including name, phone_number, id, row, and col, where id is the ID of the movie show and row and col represent the row and column number of the seat to be booked. It checks whether the seat is available or already booked and then either books the seat or returns an error message.
+
+view_show_list() Method:
+This method is used to display a list of all the movie shows in the hall, including their ID, movie name, and time.
+
+view_available_seat() Method:
+This method is used to display a 2D list of available seats for a particular movie show. It takes the ID of the movie show as an argument and displays the seat matrix for that show.
+
+Sample Usage:
+The code includes a simple loop that allows users to view available movie shows, view available seats, and book seats for a particular show. Users can input their choices using the command prompt.
+
+Conclusion:
+The Star Cinema project is a simple implementation of a cinema ticket booking system that demonstrates the use of object-oriented programming principles in Python. It can be used as a starting point for developing more complex systems that incorporate features such as payment processing, user authentication, and more.
